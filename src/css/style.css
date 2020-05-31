@@ -14,12 +14,14 @@
 }
 
 .form-container{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(251, 251, 251);
   width: 380px;
   height: 480px;
   position: relative;
-  margin: 6% auto;
+  margin: 9% auto;
   padding: 5px;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .btn-switch{
@@ -34,16 +36,20 @@
   padding: 10px 30px;
   cursor: pointer;
   background: transparent;
-  border: 0;
+  border: none;
   outline: none;
   position: relative;
 }
 
-#switch-col{
+.btn-toggle:focus, .submit-btn:focus {
+  outline-style: none;
+}
+
+.switchCol{
   top: 0;
   left: 0;
   position: absolute;
-  width: 120px;
+  width: 110px;
   height: 100%;
   background-color: rgba(44, 221, 212, 0.89);
   border-radius: 30px;
@@ -113,7 +119,13 @@ span{
   position: absolute;
 }
 
+#login{
+  left: 50px
+}
 
+#signup{
+  left: 450px;
+}
 
 
 

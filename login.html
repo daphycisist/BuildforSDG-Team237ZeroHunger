@@ -15,9 +15,9 @@
   <div class="top">
     <div class="form-container">
       <div class="btn-switch">
-        <div id="switch-col"></div>
-        <button class="btn btn-toggle">Login</button>
-        <button class="btn btn-toggle">Sign Up</button>
+        <div class="switchCol" id="switchCol"></div>
+        <button class="btn-toggle" onclick="login()">Login</button>
+        <button class="btn-toggle" onclick="signup()">Sign up</button>
       </div>
       <div class="social-login">
         <i class="fab fa-facebook fa-2x "></i>
@@ -25,16 +25,25 @@
         <i class="fab fa-twitter fa-2x"></i>
         <i class="fab fa-gmail"></i>
       </div>
-      <form class="form-input">
+      <form class="form-input" id="login">
         <input type="text" class="input" placeholder="Username/Email">
         <input type="password" class="input" placeholder="Password">
         <input type="checkbox" name="checkbox" class="checkbox">
         <span>Remember me</span>
-        <button type="submit" class="submit-btn">Log in</button>
+        <button type="submit" class="submit-btn" ">Log in</button>
       </form>
-      
+      <form class="form-input" id="signup">
+        <input type="text" class="input" placeholder="Username">
+        <input type="text" class="input" placeholder="Email address">
+        <input type="password" class="input" placeholder="Password">
+        <input type="checkbox" name="checkbox" class="checkbox">
+        <span>I agree to the <a href="">Terms and conditions</a></span>
+        <button type="submit" class="submit-btn">Sign up</button>
+      </form>
     </div>
   </div>
-  
+
+<script src="/src/js/main.js"></script>
+
 </body>
 </html>
