@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top{
+ background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+ url(/src/images/close-up-photo-of-strawberries-2694783.jpg) no-repeat center center fixed;
+ background-size: cover;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+}
+
+.form-container{
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px;
+}
+
+.btn-switch{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 2px 1px 10px 1px;
+  border-radius: 30px;
+}
+
+.btn-toggle{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#switch-col{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  background-color: rgba(44, 221, 212, 0.89);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
