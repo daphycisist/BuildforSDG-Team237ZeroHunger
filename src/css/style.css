@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body{
+  height: 100%;
+}
+
 .top{
  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
  url(/src/images/close-up-photo-of-strawberries-2694783.jpg) no-repeat center center fixed;
@@ -127,5 +131,138 @@ span{
   left: 450px;
 }
 
+/*
+  ========================================
+  Product page
+  ========================================
+*/
+
+/* Nav-Section */
+.header{
+   background-color: aliceblue;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  padding: 0px 50px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  clear: both;
+}
+
+.logo{
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: rgb(168, 241, 57);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-cart,
+nav,
+.search-bar, .logo {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header input{
+  line-height: normal;
+}
+
+.login-cart{
+  float: right;
+  clear: both;
+}
+
+.search-bar input[type=text]{
+  width: 350px;
+  padding: 5px 0 5px 40px;
+  outline: none;
+}
+
+.header a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.header a:hover{
+  border-bottom: 5px solid orange;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+
+}
+
+.search-bar input[type=submit],
+.login-cart input[type=submit] {
+  padding: 5px 9px;
+  clear: both;
+}
+
+.search-bar{
+  position: relative;
+}
+
+.search-bar i{
+  position: absolute;
+  top: 23px;
+  left: 14px;
+  font-weight: bolder;
+  font-size: 16px;
+}
 
 
+
+/* CAROUSEL SECTION */
+
+.carousel-sect{
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  padding: 0 20px;
+  /* display: inline-block; */
+  margin-bottom: 15px;
+}
+
+
+.carousel{
+  height: 600px;
+  width: 70%;
+  float: right;
+}
+
+.carousel-inner img{
+  background-size: cover no-repeat;
+  height: 600px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.shadow{
+  box-shadow: 5px 10px red;
+}
+
+.category{
+  width: 28.5%;
+  height: 600px;
+  float: left;
+  box-shadow: 5px 10px red;
+}
+
+.grid{
+  display: inline-block;
+}
+
+/* .content-sect{
+
+} */
+
+section{
+  width: 23%;
+}
