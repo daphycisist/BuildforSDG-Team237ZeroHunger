@@ -139,7 +139,8 @@ span{
 
 /* Nav-Section */
 .header{
-   background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-color: rgba(0, 0, 0, 0.904);
   height: 60px;
   width: 100%;
   line-height: 60px;
@@ -220,14 +221,14 @@ nav,
 /* CAROUSEL SECTION */
 
 .carousel-sect{
-  position: relative;
-  top: 70px;
+  background-color: rgb(248, 248, 248);
+  display: relative;
+  margin-top: 70px;
   width: 100%;
   height: 600px;
   text-align: center;
   padding: 0 20px;
-  /* display: inline-block; */
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 
@@ -237,6 +238,10 @@ nav,
   float: right;
 }
 
+.carousel-inner{
+  box-shadow: 0 0 7px rgb(139, 139, 139);  
+}
+
 .carousel-inner img{
   background-size: cover no-repeat;
   height: 600px;
@@ -244,25 +249,92 @@ nav,
   border-radius: 3px;
 }
 
-.shadow{
-  box-shadow: 5px 10px red;
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  top: 50%;
 }
 
-.category{
+.shadow {
+  box-shadow: 0 0 10px rgb(73, 73, 73);
+}
+
+.category-menu{
   width: 28.5%;
   height: 600px;
   float: left;
-  box-shadow: 5px 10px red;
 }
 
+
+/* CONTENT SECTION  */
 .grid{
   display: inline-block;
+  width: 23%;
 }
 
-/* .content-sect{
+.content-sect{
+margin: 0 15px;
+}
 
-} */
+.content-sect section{
+  height: 400px;
+  margin-bottom: 30px;
+}
 
-section{
-  width: 23%;
+.category{
+  background-color: rgb(248, 248, 248);
+  padding: 0 15px;
+}
+
+section .details{
+  height: 150px;
+  line-height: 0px;
+  width: 100%;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+section img{
+  display: block;
+  background-size: cover no-repeat;
+  width: 100%;
+  height: 250px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.details button{
+  margin-top: 10px;
+}
+
+.details p{
+  line-height: 10px;
+}
+
+.details i{
+  margin-right: 10px; 
+}
+
+.category-expand{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  margin-bottom: 5px;
+}
+
+
+.category-expand p{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.category-expand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-expand p:last-child{
+  float: right;
 }
