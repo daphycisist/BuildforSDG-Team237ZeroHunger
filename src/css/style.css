@@ -140,7 +140,7 @@ span{
 /* Nav-Section */
 .header{
   /* background-color: aliceblue; */
-  background-color: rgba(0, 0, 0, 0.904);
+  background-color: rgba(255, 253, 253, 1);
   height: 60px;
   width: 100%;
   line-height: 60px;
@@ -176,6 +176,7 @@ nav,
   clear: both;
 }
 
+
 .search-bar input[type=text]{
   width: 350px;
   padding: 5px 0 5px 40px;
@@ -192,10 +193,29 @@ nav,
 }
 
 .header a:hover{
-  border-bottom: 5px solid orange;
+  color: black;
+  transform: scale(1.1);
   border-radius: 10px;
   transition: 0.2s ease-in-out;
+}
 
+
+
+.login-cart input[type=submit]{
+  background-color: transparent;
+  border: none;
+  margin-right: 5px;
+}
+
+.login-func, .cart-func{
+  display: inline-block;
+}
+
+.login-func:hover,
+.cart-func:hover,
+.login-btn:hover,
+.cart-btn:hover{
+  color: orange;
 }
 
 .search-bar input[type=submit],
@@ -223,11 +243,11 @@ nav,
 .carousel-sect{
   background-color: rgb(248, 248, 248);
   display: relative;
-  margin-top: 70px;
+  margin-top: 80px;
   width: 100%;
-  height: 600px;
+  height: 640px;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -255,7 +275,7 @@ nav,
 }
 
 .shadow {
-  box-shadow: 0 0 10px rgb(73, 73, 73);
+  box-shadow: 0 0 30px rgb(0, 0, 0)
 }
 
 .category-menu{
@@ -266,23 +286,11 @@ nav,
 
 
 /* CONTENT SECTION  */
-.grid{
-  display: inline-block;
-  width: 23%;
-}
-
-.content-sect{
-margin: 0 15px;
-}
-
-.content-sect section{
-  height: 400px;
-  margin-bottom: 30px;
-}
 
 .category{
   background-color: rgb(248, 248, 248);
-  padding: 0 15px;
+  margin: 20px;
+  padding-bottom: 20px;
 }
 
 section .details{
@@ -317,10 +325,12 @@ section img{
 }
 
 .category-expand{
+  position: relative;
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
   margin-bottom: 5px;
+  clear: both;
 }
 
 
@@ -336,5 +346,88 @@ section img{
 }
 
 .category-expand p:last-child{
-  float: right;
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
+}
+
+.section-grid {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.section-grid section {
+  width: 340px;
+  display: inline-block;
+  text-align: right;
+  margin: 0 5px;
+}
+
+.price,
+.price-per-kg {
+  display: inline;
+}
+
+footer{
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+  background-color: rgb(80, 80, 80);
+  text-align: center;
+}
+
+footer h3{
+  display: block;
+  height: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  color: rgb(156, 243, 24);
+}
+
+footer section{
+  /* height: 100%; */
+  /* background-color: #fff; */
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+  color: #fff;
+  text-align: justify;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.grid-1,
+.grid-2 {
+  width: 28%
+}
+
+.grid-3,
+.grid-4 {
+  width: 18%
+}
+
+.btn-danger{
+  background-color: rgb(156, 243, 24);
+  border: none;
+}
+
+section h5{
+  display: inline block
+}
+
+section p{
+  display: block
+}
+
+section h5:after{
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-bottom: 5px solid #fff;
 }
