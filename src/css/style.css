@@ -224,6 +224,22 @@ nav,
   clear: both;
 }
 
+.search-bar input[type=submit]{
+  background-color: rgb(12, 240, 12);
+  border-radius: 0 5px 5px 0;
+  border-color: rgb(12, 240, 12);
+}
+
+.search-bar input[type=submit]:focus{
+  outline: none;
+}
+
+.search-bar input[type=submit]:active{
+  outline: none;
+  transform: scale(0.9);
+  border: none;
+}
+
 .search-bar{
   position: relative;
 }
@@ -420,14 +436,14 @@ section h5{
 }
 
 section p{
-  display: block
+  display: block;
+
 }
 
 section h5:after{
   content: "";
   display: block;
   width: 10%;
-  margin: 0 auto;
   padding-top: 10px;
   border-bottom: 5px solid #fff;
 }
